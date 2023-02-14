@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "jest"],
+  "extends": ["prettier", "eslint:recommended", "plugin:jest/recommended", "plugin:jest/style"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["prettier", "@typescript-eslint", "jest"],
+      "extends": [
+        "prettier",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+      ]
+    }
+  ]
+}

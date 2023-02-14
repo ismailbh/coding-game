@@ -1,0 +1,43 @@
+{
+  "name": "sephora-coding-game",
+  "version": "1.0.0",
+  "description": "Little exercises to show your code skills!",
+  "main": "index.js",
+  "repository": "git@github.com:r-guerin/sephora-coding-game.git",
+  "author": "rguerin.pro@gmail.com <rguerin.pro@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rimraf dist",
+    "dev": "nodemon -e ts --exec \"yarn start\"",
+    "start": "yarn build && node dist",
+    "tdd": "jest --watch",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.2"
+  }
+}
