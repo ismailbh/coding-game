@@ -2,5 +2,5 @@ export type Customer = {
   id: string;
   firstName: string;
   lastName: string;
-  status: "active" | "inactive";
+  status: 'active' | 'inactive';
 };
